@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syou的50音表</title>
+    <title>Syou的50音學習表</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,247 +15,201 @@
 
     <main class="game-wrapper">
         <header class="main-header">
-            <h1 class="game-title">Syou的<span class="accent">50音表</span></h1>
+            <h1 class="game-title">Syou的<span class="accent">50音學習表</span></h1>
         </header>
 
-        <section class="chart-section seion-section">
+        <section class="chart-section">
             <div class="section-header">
                 <span class="icon">🌸</span>
                 <h2>1. 清音 / SEION</h2>
             </div>
-
-            <div class="kana-grid seion-grid">
-                
+            <div class="kana-grid">
                 <div class="gyo-label">あ行</div>
-                
-                <button class="kana-card seion-card dan-a">
-                    <div class="kana-main"><span class="hira">あ</span><span class="kata">ア</span></div>
-                    <span class="romaji">a</span>
-                    <div class="shine"></div>
-                </button>
-                <button class="kana-card seion-card dan-i">
-                    <div class="kana-main"><span class="hira">い</span><span class="kata">イ</span></div>
-                    <span class="romaji">i</span>
-                    <div class="shine"></div>
-                </button>
-                <button class="kana-card seion-card dan-u">
-                    <div class="kana-main"><span class="hira">う</span><span class="kata">ウ</span></div>
-                    <span class="romaji">u</span>
-                    <div class="shine"></div>
-                </button>
-                <button class="kana-card seion-card dan-e">
-                    <div class="kana-main"><span class="hira">え</span><span class="kata">エ</span></div>
-                    <span class="romaji">e</span>
-                    <div class="shine"></div>
-                </button>
-                <button class="kana-card seion-card dan-o">
-                    <div class="kana-main"><span class="hira">お</span><span class="kata">オ</span></div>
-                    <span class="romaji">o</span>
-                    <div class="shine"></div>
-                </button>
+                <button class="kana-card seion-card" data-kana="あ"><div class="kana-main"><span class="hira">あ</span><span class="kata">ア</span></div><span class="romaji">a</span></button>
+                <button class="kana-card seion-card" data-kana="い"><div class="kana-main"><span class="hira">い</span><span class="kata">イ</span></div><span class="romaji">i</span></button>
+                <button class="kana-card seion-card" data-kana="う"><div class="kana-main"><span class="hira">う</span><span class="kata">ウ</span></div><span class="romaji">u</span></button>
+                <button class="kana-card seion-card" data-kana="え"><div class="kana-main"><span class="hira">え</span><span class="kata">エ</span></div><span class="romaji">e</span></button>
+                <button class="kana-card seion-card" data-kana="お"><div class="kana-main"><span class="hira">お</span><span class="kata">オ</span></div><span class="romaji">o</span></button>
 
                 <div class="gyo-label">か行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">か</span><span class="kata">カ</span></div><span class="romaji">ka</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-i"><div class="kana-main"><span class="hira">き</span><span class="kata">キ</span></div><span class="romaji">ki</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">く</span><span class="kata">ク</span></div><span class="romaji">ku</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-e"><div class="kana-main"><span class="hira">け</span><span class="kata">ケ</span></div><span class="romaji">ke</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">こ</span><span class="kata">コ</span></div><span class="romaji">ko</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="か"><div class="kana-main"><span class="hira">か</span><span class="kata">カ</span></div><span class="romaji">ka</span></button>
+                <button class="kana-card seion-card" data-kana="き"><div class="kana-main"><span class="hira">き</span><span class="kata">キ</span></div><span class="romaji">ki</span></button>
+                <button class="kana-card seion-card" data-kana="く"><div class="kana-main"><span class="hira">く</span><span class="kata">ク</span></div><span class="romaji">ku</span></button>
+                <button class="kana-card seion-card" data-kana="け"><div class="kana-main"><span class="hira">け</span><span class="kata">ケ</span></div><span class="romaji">ke</span></button>
+                <button class="kana-card seion-card" data-kana="こ"><div class="kana-main"><span class="hira">こ</span><span class="kata">コ</span></div><span class="romaji">ko</span></button>
 
                 <div class="gyo-label">さ行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">さ</span><span class="kata">サ</span></div><span class="romaji">sa</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-i"><div class="kana-main"><span class="hira">し</span><span class="kata">シ</span></div><span class="romaji">shi</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">す</span><span class="kata">ス</span></div><span class="romaji">su</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-e"><div class="kana-main"><span class="hira">せ</span><span class="kata">セ</span></div><span class="romaji">se</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">そ</span><span class="kata">ソ</span></div><span class="romaji">so</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="さ"><div class="kana-main"><span class="hira">さ</span><span class="kata">サ</span></div><span class="romaji">sa</span></button>
+                <button class="kana-card seion-card" data-kana="し"><div class="kana-main"><span class="hira">し</span><span class="kata">シ</span></div><span class="romaji">shi</span></button>
+                <button class="kana-card seion-card" data-kana="す"><div class="kana-main"><span class="hira">す</span><span class="kata">ス</span></div><span class="romaji">su</span></button>
+                <button class="kana-card seion-card" data-kana="せ"><div class="kana-main"><span class="hira">せ</span><span class="kata">セ</span></div><span class="romaji">se</span></button>
+                <button class="kana-card seion-card" data-kana="そ"><div class="kana-main"><span class="hira">そ</span><span class="kata">ソ</span></div><span class="romaji">so</span></button>
 
                 <div class="gyo-label">た行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">た</span><span class="kata">タ</span></div><span class="romaji">ta</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-i"><div class="kana-main"><span class="hira">ち</span><span class="kata">チ</span></div><span class="romaji">chi</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">つ</span><span class="kata">ツ</span></div><span class="romaji">tsu</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-e"><div class="kana-main"><span class="hira">て</span><span class="kata">テ</span></div><span class="romaji">te</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">と</span><span class="kata">ト</span></div><span class="romaji">to</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="た"><div class="kana-main"><span class="hira">た</span><span class="kata">タ</span></div><span class="romaji">ta</span></button>
+                <button class="kana-card seion-card" data-kana="ち"><div class="kana-main"><span class="hira">ち</span><span class="kata">チ</span></div><span class="romaji">chi</span></button>
+                <button class="kana-card seion-card" data-kana="つ"><div class="kana-main"><span class="hira">つ</span><span class="kata">ツ</span></div><span class="romaji">tsu</span></button>
+                <button class="kana-card seion-card" data-kana="て"><div class="kana-main"><span class="hira">て</span><span class="kata">テ</span></div><span class="romaji">te</span></button>
+                <button class="kana-card seion-card" data-kana="と"><div class="kana-main"><span class="hira">と</span><span class="kata">ト</span></div><span class="romaji">to</span></button>
 
                 <div class="gyo-label">な行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">な</span><span class="kata">ナ</span></div><span class="romaji">na</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-i"><div class="kana-main"><span class="hira">に</span><span class="kata">ニ</span></div><span class="romaji">ni</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">ぬ</span><span class="kata">ヌ</span></div><span class="romaji">nu</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-e"><div class="kana-main"><span class="hira">ね</span><span class="kata">ネ</span></div><span class="romaji">ne</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">の</span><span class="kata">ノ</span></div><span class="romaji">no</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="な"><div class="kana-main"><span class="hira">な</span><span class="kata">ナ</span></div><span class="romaji">na</span></button>
+                <button class="kana-card seion-card" data-kana="に"><div class="kana-main"><span class="hira">に</span><span class="kata">ニ</span></div><span class="romaji">ni</span></button>
+                <button class="kana-card seion-card" data-kana="ぬ"><div class="kana-main"><span class="hira">ぬ</span><span class="kata">ヌ</span></div><span class="romaji">nu</span></button>
+                <button class="kana-card seion-card" data-kana="ね"><div class="kana-main"><span class="hira">ね</span><span class="kata">ネ</span></div><span class="romaji">ne</span></button>
+                <button class="kana-card seion-card" data-kana="の"><div class="kana-main"><span class="hira">の</span><span class="kata">ノ</span></div><span class="romaji">no</span></button>
 
                 <div class="gyo-label">は行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">は</span><span class="kata">ハ</span></div><span class="romaji">ha</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-i"><div class="kana-main"><span class="hira">ひ</span><span class="kata">ヒ</span></div><span class="romaji">hi</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">ふ</span><span class="kata">フ</span></div><span class="romaji">fu</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-e"><div class="kana-main"><span class="hira">へ</span><span class="kata">ヘ</span></div><span class="romaji">he</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">ほ</span><span class="kata">ホ</span></div><span class="romaji">ho</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="は"><div class="kana-main"><span class="hira">は</span><span class="kata">ハ</span></div><span class="romaji">ha</span></button>
+                <button class="kana-card seion-card" data-kana="ひ"><div class="kana-main"><span class="hira">ひ</span><span class="kata">ヒ</span></div><span class="romaji">hi</span></button>
+                <button class="kana-card seion-card" data-kana="ふ"><div class="kana-main"><span class="hira">ふ</span><span class="kata">フ</span></div><span class="romaji">fu</span></button>
+                <button class="kana-card seion-card" data-kana="へ"><div class="kana-main"><span class="hira">へ</span><span class="kata">ヘ</span></div><span class="romaji">he</span></button>
+                <button class="kana-card seion-card" data-kana="ほ"><div class="kana-main"><span class="hira">ほ</span><span class="kata">ホ</span></div><span class="romaji">ho</span></button>
 
                 <div class="gyo-label">ま行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">ま</span><span class="kata">マ</span></div><span class="romaji">ma</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-i"><div class="kana-main"><span class="hira">み</span><span class="kata">ミ</span></div><span class="romaji">mi</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">む</span><span class="kata">ム</span></div><span class="romaji">mu</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-e"><div class="kana-main"><span class="hira">め</span><span class="kata">メ</span></div><span class="romaji">me</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">も</span><span class="kata">モ</span></div><span class="romaji">mo</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="ま"><div class="kana-main"><span class="hira">ま</span><span class="kata">マ</span></div><span class="romaji">ma</span></button>
+                <button class="kana-card seion-card" data-kana="み"><div class="kana-main"><span class="hira">み</span><span class="kata">ミ</span></div><span class="romaji">mi</span></button>
+                <button class="kana-card seion-card" data-kana="む"><div class="kana-main"><span class="hira">む</span><span class="kata">ム</span></div><span class="romaji">mu</span></button>
+                <button class="kana-card seion-card" data-kana="め"><div class="kana-main"><span class="hira">め</span><span class="kata">メ</span></div><span class="romaji">me</span></button>
+                <button class="kana-card seion-card" data-kana="も"><div class="kana-main"><span class="hira">も</span><span class="kata">モ</span></div><span class="romaji">mo</span></button>
 
                 <div class="gyo-label">や行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">や</span><span class="kata">ヤ</span></div><span class="romaji">ya</span><div class="shine"></div></button>
-                <div class="empty-cell"></div> <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">ゆ</span><span class="kata">ユ</span></div><span class="romaji">yu</span><div class="shine"></div></button>
-                <div class="empty-cell"></div> <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">よ</span><span class="kata">ヨ</span></div><span class="romaji">yo</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="や"><div class="kana-main"><span class="hira">や</span><span class="kata">ヤ</span></div><span class="romaji">ya</span></button>
+                <div class="empty-cell"></div>
+                <button class="kana-card seion-card" data-kana="ゆ"><div class="kana-main"><span class="hira">ゆ</span><span class="kata">ユ</span></div><span class="romaji">yu</span></button>
+                <div class="empty-cell"></div>
+                <button class="kana-card seion-card" data-kana="よ"><div class="kana-main"><span class="hira">よ</span><span class="kata">ヨ</span></div><span class="romaji">yo</span></button>
 
                 <div class="gyo-label">ら行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">ら</span><span class="kata">ラ</span></div><span class="romaji">ra</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-i"><div class="kana-main"><span class="hira">り</span><span class="kata">リ</span></div><span class="romaji">ri</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-u"><div class="kana-main"><span class="hira">る</span><span class="kata">ル</span></div><span class="romaji">ru</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-e"><div class="kana-main"><span class="hira">れ</span><span class="kata">レ</span></div><span class="romaji">re</span><div class="shine"></div></button>
-                <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">ろ</span><span class="kata">ロ</span></div><span class="romaji">ro</span><div class="shine"></div></button>
+                <button class="kana-card seion-card" data-kana="ら"><div class="kana-main"><span class="hira">ら</span><span class="kata">ラ</span></div><span class="romaji">ra</span></button>
+                <button class="kana-card seion-card" data-kana="り"><div class="kana-main"><span class="hira">り</span><span class="kata">リ</span></div><span class="romaji">ri</span></button>
+                <button class="kana-card seion-card" data-kana="る"><div class="kana-main"><span class="hira">る</span><span class="kata">ル</span></div><span class="romaji">ru</span></button>
+                <button class="kana-card seion-card" data-kana="れ"><div class="kana-main"><span class="hira">れ</span><span class="kata">レ</span></div><span class="romaji">re</span></button>
+                <button class="kana-card seion-card" data-kana="ろ"><div class="kana-main"><span class="hira">ろ</span><span class="kata">ロ</span></div><span class="romaji">ro</span></button>
 
                 <div class="gyo-label">わ行</div>
-                <button class="kana-card seion-card dan-a"><div class="kana-main"><span class="hira">わ</span><span class="kata">ワ</span></div><span class="romaji">wa</span><div class="shine"></div></button>
-                <div class="empty-cell"></div> <div class="empty-cell"></div> <div class="empty-cell"></div> <button class="kana-card seion-card dan-o"><div class="kana-main"><span class="hira">を</span><span class="kata">ヲ</span></div><span class="romaji">wo</span><div class="shine"></div></button>
-
-            </div> </section>
-
-        <section class="chart-section bion-section">
-            <div class="section-header">
-                <span class="icon">🌸</span>
-                <h2>2. 鼻音 / BION</h2>
-            </div>
-            <div class="kana-grid seion-grid bion-grid">
-                <div class="gyo-label bion-label">鼻音行</div>
-                <button class="kana-card bion-card">
-                    <div class="kana-main"><span class="hira">ん</span><span class="kata">ン</span></div>
-                    <span class="romaji">n</span>
-                    <div class="shine"></div>
-                </button>
-                <div class="empty-cell"></div><div class="empty-cell"></div><div class="empty-cell"></div><div class="empty-cell"></div>
+                <button class="kana-card seion-card" data-kana="わ"><div class="kana-main"><span class="hira">わ</span><span class="kata">ワ</span></div><span class="romaji">wa</span></button>
+                <div class="empty-cell"></div><div class="empty-cell"></div><div class="empty-cell"></div>
+                <button class="kana-card seion-card" data-kana="を"><div class="kana-main"><span class="hira">を</span><span class="kata">ヲ</span></div><span class="romaji">wo</span></button>
             </div>
         </section>
 
-        <section class="chart-section dakuon-section">
-            <div class="section-header">
-                <span class="icon">🌸</span>
-                <h2>3. 濁音 / DAKUON</h2>
+        <section class="chart-section">
+            <div class="section-header"><span class="icon">🌸</span><h2>2. 鼻音 / BION</h2></div>
+            <div class="kana-grid">
+                <div class="gyo-label">鼻音</div>
+                <button class="kana-card bion-card" data-kana="ん"><div class="kana-main"><span class="hira">ん</span><span class="kata">ン</span></div><span class="romaji">n</span></button>
             </div>
-            <div class="kana-grid seion-grid dakuon-grid-flow">
-                
-                <div class="gyo-label">が行</div>
-                <button class="kana-card dakuon-card dan-a"><div class="kana-main"><span class="hira">が</span><span class="kata">ガ</span></div><span class="romaji">ga</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-i"><div class="kana-main"><span class="hira">ぎ</span><span class="kata">ギ</span></div><span class="romaji">gi</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-u"><div class="kana-main"><span class="hira">ぐ</span><span class="kata">グ</span></div><span class="romaji">gu</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-e"><div class="kana-main"><span class="hira">げ</span><span class="kata">ゲ</span></div><span class="romaji">ge</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-o"><div class="kana-main"><span class="hira">ご</span><span class="kata">ゴ</span></div><span class="romaji">go</span><div class="shine"></div></button>
+        </section>
 
+        <section class="chart-section">
+            <div class="section-header"><span class="icon">🌸</span><h2>3. 濁音 / DAKUON</h2></div>
+            <div class="kana-grid">
+                <div class="gyo-label">が行</div>
+                <button class="kana-card dakuon-card" data-kana="が"><div class="kana-main"><span class="hira">が</span><span class="kata">ガ</span></div><span class="romaji">ga</span></button>
+                <button class="kana-card dakuon-card" data-kana="ぎ"><div class="kana-main"><span class="hira">ぎ</span><span class="kata">ギ</span></div><span class="romaji">gi</span></button>
+                <button class="kana-card dakuon-card" data-kana="ぐ"><div class="kana-main"><span class="hira">ぐ</span><span class="kata">グ</span></div><span class="romaji">gu</span></button>
+                <button class="kana-card dakuon-card" data-kana="げ"><div class="kana-main"><span class="hira">げ</span><span class="kata">格</span></div><span class="romaji">ge</span></button>
+                <button class="kana-card dakuon-card" data-kana="ご"><div class="kana-main"><span class="hira">ご</span><span class="kata">ゴ</span></div><span class="romaji">go</span></button>
+                
                 <div class="gyo-label">ざ行</div>
-                <button class="kana-card dakuon-card dan-a"><div class="kana-main"><span class="hira">ざ</span><span class="kata">ザ</span></div><span class="romaji">za</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-i"><div class="kana-main"><span class="hira">じ</span><span class="kata">ジ</span></div><span class="romaji">ji</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-u"><div class="kana-main"><span class="hira">ず</span><span class="kata">ズ</span></div><span class="romaji">zu</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-e"><div class="kana-main"><span class="hira">ぜ</span><span class="kata">ゼ</span></div><span class="romaji">ze</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-o"><div class="kana-main"><span class="hira">ぞ</span><span class="kata">ゾ</span></div><span class="romaji">zo</span><div class="shine"></div></button>
+                <button class="kana-card dakuon-card" data-kana="ざ"><div class="kana-main"><span class="hira">ざ</span><span class="kata">ザ</span></div><span class="romaji">za</span></button>
+                <button class="kana-card dakuon-card" data-kana="じ"><div class="kana-main"><span class="hira">じ</span><span class="kata">ジ</span></div><span class="romaji">ji</span></button>
+                <button class="kana-card dakuon-card" data-kana="ず"><div class="kana-main"><span class="hira">ず</span><span class="kata">ズ</span></div><span class="romaji">zu</span></button>
+                <button class="kana-card dakuon-card" data-kana="ぜ"><div class="kana-main"><span class="hira">ぜ</span><span class="kata">ゼ</span></div><span class="romaji">ze</span></button>
+                <button class="kana-card dakuon-card" data-kana="ぞ"><div class="kana-main"><span class="hira">ぞ</span><span class="kata">ゾ</span></div><span class="romaji">zo</span></button>
 
                 <div class="gyo-label">だ行</div>
-                <button class="kana-card dakuon-card dan-a"><div class="kana-main"><span class="hira">だ</span><span class="kata">ダ</span></div><span class="romaji">da</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-i"><div class="kana-main"><span class="hira">ぢ</span><span class="kata">ヂ</span></div><span class="romaji">ji</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-u"><div class="kana-main"><span class="hira">づ</span><span class="kata">ヅ</span></div><span class="romaji">zu</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-e"><div class="kana-main"><span class="hira">で</span><span class="kata">デ</span></div><span class="romaji">de</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-o"><div class="kana-main"><span class="hira">ど</span><span class="kata">ド</span></div><span class="romaji">do</span><div class="shine"></div></button>
+                <button class="kana-card dakuon-card" data-kana="だ"><div class="kana-main"><span class="hira">だ</span><span class="kata">ダ</span></div><span class="romaji">da</span></button>
+                <button class="kana-card dakuon-card" data-kana="ぢ"><div class="kana-main"><span class="hira">ぢ</span><span class="kata">ヂ</span></div><span class="romaji">ji</span></button>
+                <button class="kana-card dakuon-card" data-kana="づ"><div class="kana-main"><span class="hira">づ</span><span class="kata">ヅ</span></div><span class="romaji">zu</span></button>
+                <button class="kana-card dakuon-card" data-kana="で"><div class="kana-main"><span class="hira">で</span><span class="kata">デ</span></div><span class="romaji">de</span></button>
+                <button class="kana-card dakuon-card" data-kana="ど"><div class="kana-main"><span class="hira">ど</span><span class="kata">ド</span></div><span class="romaji">do</span></button>
 
                 <div class="gyo-label">ば行</div>
-                <button class="kana-card dakuon-card dan-a"><div class="kana-main"><span class="hira">ば</span><span class="kata">バ</span></div><span class="romaji">ba</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-i"><div class="kana-main"><span class="hira">び</span><span class="kata">ビ</span></div><span class="romaji">bi</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-u"><div class="kana-main"><span class="hira">ぶ</span><span class="kata">ブ</span></div><span class="romaji">bu</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-e"><div class="kana-main"><span class="hira">べ</span><span class="kata">ベ</span></div><span class="romaji">be</span><div class="shine"></div></button>
-                <button class="kana-card dakuon-card dan-o"><div class="kana-main"><span class="hira">ぼ</span><span class="kata">ボ</span></div><span class="romaji">bo</span><div class="shine"></div></button>
+                <button class="kana-card dakuon-card" data-kana="ば"><div class="kana-main"><span class="hira">ば</span><span class="kata">バ</span></div><span class="romaji">ba</span></button>
+                <button class="kana-card dakuon-card" data-kana="び"><div class="kana-main"><span class="hira">び</span><span class="kata">ビ</span></div><span class="romaji">bi</span></button>
+                <button class="kana-card dakuon-card" data-kana="ぶ"><div class="kana-main"><span class="hira">ぶ</span><span class="kata">ブ</span></div><span class="romaji">bu</span></button>
+                <button class="kana-card dakuon-card" data-kana="べ"><div class="kana-main"><span class="hira">べ</span><span class="kata">ベ</span></div><span class="romaji">be</span></button>
+                <button class="kana-card dakuon-card" data-kana="ぼ"><div class="kana-main"><span class="hira">ぼ</span><span class="kata">ボ</span></div><span class="romaji">bo</span></button>
             </div>
         </section>
 
-        <section class="chart-section handakuon-section">
-            <div class="section-header">
-                <span class="icon">🌸</span>
-                <h2>4. 半濁音 / HANDAKUON</h2>
-            </div>
-            <div class="kana-grid seion-grid handakuon-grid-flow">
+        <section class="chart-section">
+            <div class="section-header"><span class="icon">🌸</span><h2>4. 半濁音 / HANDAKUON</h2></div>
+            <div class="kana-grid">
                 <div class="gyo-label">ぱ行</div>
-                <button class="kana-card handakuon-card dan-a"><div class="kana-main"><span class="hira">ぱ</span><span class="kata">パ</span></div><span class="romaji">pa</span><div class="shine"></div></button>
-                <button class="kana-card handakuon-card dan-i"><div class="kana-main"><span class="hira">ぴ</span><span class="kata">ピ</span></div><span class="romaji">pi</span><div class="shine"></div></button>
-                <button class="kana-card handakuon-card dan-u"><div class="kana-main"><span class="hira">ぷ</span><span class="kata">プ</span></div><span class="romaji">pu</span><div class="shine"></div></button>
-                <button class="kana-card handakuon-card dan-e"><div class="kana-main"><span class="hira">ぺ</span><span class="kata">ペ</span></div><span class="romaji">pe</span><div class="shine"></div></button>
-                <button class="kana-card handakuon-card dan-o"><div class="kana-main"><span class="hira">ぽ</span><span class="kata">ポ</span></div><span class="romaji">po</span><div class="shine"></div></button>
+                <button class="kana-card handakuon-card" data-kana="ぱ"><div class="kana-main"><span class="hira">ぱ</span><span class="kata">パ</span></div><span class="romaji">pa</span></button>
+                <button class="kana-card handakuon-card" data-kana="ぴ"><div class="kana-main"><span class="hira">ぴ</span><span class="kata">ピ</span></div><span class="romaji">pi</span></button>
+                <button class="kana-card handakuon-card" data-kana="ぷ"><div class="kana-main"><span class="hira">ぷ</span><span class="kata">プ</span></div><span class="romaji">pu</span></button>
+                <button class="kana-card handakuon-card" data-kana="ぺ"><div class="kana-main"><span class="hira">ぺ</span><span class="kata">ペ</span></div><span class="romaji">pe</span></button>
+                <button class="kana-card handakuon-card" data-kana="ぽ"><div class="kana-main"><span class="hira">ぽ</span><span class="kata">ポ</span></div><span class="romaji">po</span></button>
             </div>
         </section>
 
-        <section class="chart-section yoon-section">
-            <div class="section-header">
-                <span class="icon">🌸</span>
-                <h2>5. 拗音 / YŌON</h2>
-            </div>
-
+        <section class="chart-section">
+            <div class="section-header"><span class="icon">🌸</span><h2>5. 拗音 / YŌON</h2></div>
             <div class="kana-grid yoon-grid">
+                <div class="gyo-label">き</div>
+                <button class="kana-card yoon-card" data-kana="きゃ"><div class="kana-main"><span class="hira">きゃ</span><span class="kata">キャ</span></div><span class="romaji">kya</span></button>
+                <button class="kana-card yoon-card" data-kana="きゅ"><div class="kana-main"><span class="hira">きゅ</span><span class="kata">キュ</span></div><span class="romaji">kyu</span></button>
+                <button class="kana-card yoon-card" data-kana="きょ"><div class="kana-main"><span class="hira">きょ</span><span class="kata">キョ</span></div><span class="romaji">kyo</span></button>
                 
-                <div class="gyo-label yoon-gyo"></div>
-                
-                <button class="kana-card yoon-card"><div class="yoon-main">きゃ キャ</div><span class="romaji">kya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">きゅ キュ</div><span class="romaji">kyu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">きょ キョ</div><span class="romaji">kyo</span><div class="shine"></div></button>
+                <div class="gyo-label">し</div>
+                <button class="kana-card yoon-card" data-kana="しゃ"><div class="kana-main"><span class="hira">しゃ</span><span class="kata">シャ</span></div><span class="romaji">sha</span></button>
+                <button class="kana-card yoon-card" data-kana="しゅ"><div class="kana-main"><span class="hira">しゅ</span><span class="kata">シュ</span></div><span class="romaji">shu</span></button>
+                <button class="kana-card yoon-card" data-kana="しょ"><div class="kana-main"><span class="hira">しょ</span><span class="kata">ショ</span></div><span class="romaji">sho</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card"><div class="yoon-main">しゃ シャ</div><span class="romaji">sha</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">しゅ シュ</div><span class="romaji">shu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">しょ ショ</div><span class="romaji">sho</span><div class="shine"></div></button>
+                <div class="gyo-label">ち</div>
+                <button class="kana-card yoon-card" data-kana="ちゃ"><div class="kana-main"><span class="hira">ちゃ</span><span class="kata">チャ</span></div><span class="romaji">cha</span></button>
+                <button class="kana-card yoon-card" data-kana="ちゅ"><div class="kana-main"><span class="hira">ちゅ</span><span class="kata">チュ</span></div><span class="romaji">chu</span></button>
+                <button class="kana-card yoon-card" data-kana="ちょ"><div class="kana-main"><span class="hira">ちょ</span><span class="kata">チョ</span></div><span class="romaji">cho</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card"><div class="yoon-main">ちゃ チャ</div><span class="romaji">cha</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">ちゅ チュ</div><span class="romaji">chu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">ちょ ちょ</div><span class="romaji">cho</span><div class="shine"></div></button>
+                <div class="gyo-label">に</div>
+                <button class="kana-card yoon-card" data-kana="にゃ"><div class="kana-main"><span class="hira">にゃ</span><span class="kata">ニャ</span></div><span class="romaji">nya</span></button>
+                <button class="kana-card yoon-card" data-kana="にゅ"><div class="kana-main"><span class="hira">にゅ</span><span class="kata">ニュ</span></div><span class="romaji">nyu</span></button>
+                <button class="kana-card yoon-card" data-kana="にょ"><div class="kana-main"><span class="hira">にょ</span><span class="kata">ニョ</span></div><span class="romaji">nyo</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card"><div class="yoon-main">にゃ ニャ</div><span class="romaji">nya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">にゅ ニュ</div><span class="romaji">nyu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">にょ ニョ</div><span class="romaji">nyo</span><div class="shine"></div></button>
+                <div class="gyo-label">ひ</div>
+                <button class="kana-card yoon-card" data-kana="ひゃ"><div class="kana-main"><span class="hira">ひゃ</span><span class="kata">ヒャ</span></div><span class="romaji">hya</span></button>
+                <button class="kana-card yoon-card" data-kana="ひゅ"><div class="kana-main"><span class="hira">ひゅ</span><span class="kata">ヒュ</span></div><span class="romaji">hyu</span></button>
+                <button class="kana-card yoon-card" data-kana="ひょ"><div class="kana-main"><span class="hira">ひょ</span><span class="kata">ヒョ</span></div><span class="romaji">hyo</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card"><div class="yoon-main">ひゃ ヒャ</div><span class="romaji">hya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">ひゅ ヒュ</div><span class="romaji">hyu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">ひょ ヒョ</div><span class="romaji">hyo</span><div class="shine"></div></button>
+                <div class="gyo-label">み</div>
+                <button class="kana-card yoon-card" data-kana="みゃ"><div class="kana-main"><span class="hira">みゃ</span><span class="kata">ミャ</span></div><span class="romaji">mya</span></button>
+                <button class="kana-card yoon-card" data-kana="みゅ"><div class="kana-main"><span class="hira">みゅ</span><span class="kata">ミュ</span></div><span class="romaji">myu</span></button>
+                <button class="kana-card yoon-card" data-kana="みょ"><div class="kana-main"><span class="hira">みょ</span><span class="kata">ミョ</span></div><span class="romaji">myo</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card"><div class="yoon-main">みゃ ミャ</div><span class="romaji">mya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">みゅ ミュ</div><span class="romaji">myu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">みょ ミョ</div><span class="romaji">myo</span><div class="shine"></div></button>
+                <div class="gyo-label">り</div>
+                <button class="kana-card yoon-card" data-kana="りゃ"><div class="kana-main"><span class="hira">りゃ</span><span class="kata">リャ</span></div><span class="romaji">rya</span></button>
+                <button class="kana-card yoon-card" data-kana="りゅ"><div class="kana-main"><span class="hira">りゅ</span><span class="kata">リュ</span></div><span class="romaji">ryu</span></button>
+                <button class="kana-card yoon-card" data-kana="りょ"><div class="kana-main"><span class="hira">りょ</span><span class="kata">リョ</span></div><span class="romaji">ryo</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card"><div class="yoon-main">りゃ リャ</div><span class="romaji">rya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">りゅ リュ</div><span class="romaji">ryu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card"><div class="yoon-main">りょ リョ</div><span class="romaji">ryo</span><div class="shine"></div></button>
+                <div class="yoon-divider"></div>
 
-                <div class="yoon-divider row-label-start span-3"></div>
+                <div class="gyo-label">ぎ</div>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="ぎゃ"><div class="kana-main"><span class="hira">ぎゃ</span><span class="kata">ギャ</span></div><span class="romaji">gya</span></button>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="ぎゅ"><div class="kana-main"><span class="hira">ぎゅ</span><span class="kata">ギュ</span></div><span class="romaji">gyu</span></button>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="ぎょ"><div class="kana-main"><span class="hira">ぎょ</span><span class="kata">ギョ</span></div><span class="romaji">gyo</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">ぎゃ ギャ</div><span class="romaji">gya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">ぎゅ ギュ</div><span class="romaji">gyu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">ぎょ ギョ</div><span class="romaji">gyo</span><div class="shine"></div></button>
+                <div class="gyo-label">じ</div>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="じゃ"><div class="kana-main"><span class="hira">じゃ</span><span class="kata">ジャ</span></div><span class="romaji">ja</span></button>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="じゅ"><div class="kana-main"><span class="hira">じゅ</span><span class="kata">ジュ</span></div><span class="romaji">ju</span></button>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="じょ"><div class="kana-main"><span class="hira">じょ</span><span class="kata">ジョ</span></div><span class="romaji">jo</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">じゃ ジャ</div><span class="romaji">ja</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">じゅ ジュ</div><span class="romaji">ju</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">じょ ジョ</div><span class="romaji">jo</span><div class="shine"></div></button>
+                <div class="gyo-label">び</div>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="びゃ"><div class="kana-main"><span class="hira">びゃ</span><span class="kata">ビャ</span></div><span class="romaji">bya</span></button>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="びゅ"><div class="kana-main"><span class="hira">びゅ</span><span class="kata">ビュ</span></div><span class="romaji">byu</span></button>
+                <button class="kana-card yoon-card yoon-dakuon" data-kana="びょ"><div class="kana-main"><span class="hira">びょ</span><span class="kata">ビョ</span></div><span class="romaji">byo</span></button>
 
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">ぢゃ ヂャ</div><span class="romaji">ja</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">ぢゅ ヂュ</div><span class="romaji">ju</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">ぢょ ヂョ</div><span class="romaji">jo</span><div class="shine"></div></button>
-
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">びゃ ビャ</div><span class="romaji">bya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">びゅ ビュ</div><span class="romaji">byu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-dakuon-card"><div class="yoon-main">びょ ビョ</div><span class="romaji">byo</span><div class="shine"></div></button>
-
-                <div class="gyo-label yoon-gyo"></div>
-                <button class="kana-card yoon-card yoon-handakuon-card"><div class="yoon-main">ぴゃ ピャ</div><span class="romaji">pya</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-handakuon-card"><div class="yoon-main">ぴゅ ピュ</div><span class="romaji">pyu</span><div class="shine"></div></button>
-                <button class="kana-card yoon-card yoon-handakuon-card"><div class="yoon-main">ぴょ ピョ</div><span class="romaji">pyo</span><div class="shine"></div></button>
-
-            </div> </section>
-
+                <div class="gyo-label">ぴ</div>
+                <button class="kana-card yoon-card yoon-handakuon" data-kana="ぴゃ"><div class="kana-main"><span class="hira">ぴゃ</span><span class="kata">ピャ</span></div><span class="romaji">pya</span></button>
+                <button class="kana-card yoon-card yoon-handakuon" data-kana="ぴゅ"><div class="kana-main"><span class="hira">ぴゅ</span><span class="kata">ピュ</span></div><span class="romaji">pyu</span></button>
+                <button class="kana-card yoon-card yoon-handakuon" data-kana="ぴょ"><div class="kana-main"><span class="hira">ぴょ</span><span class="kata">ピョ</span></div><span class="romaji">pyo</span></button>
+            </div>
+        </section>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
