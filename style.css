@@ -1,0 +1,363 @@
+/* =========================================
+   1. 基礎設定 & 變數 (Colors & Fonts)
+   ========================================= */
+:root {
+    /* 主要絢爛色調 (用於 Hover 發光和點綴) */
+    --accent-glow: rgba(255, 235, 59, 0.4); /* 金色發光 */
+    --text-main: #6c3f4e;     /* 深粉褐，柔和好閱讀 */
+    --text-sub: #b18794;      /* 淺粉褐 */
+    
+    /* 五種分类的卡片背景色 (柔和、明亮，不影響閱讀) */
+    --bg-seion: #ffe3ec;     /* 柔和櫻花粉 (清音) */
+    --bg-bion: #fff8e1;      /* 柔和金黃 (鼻音) */
+    --bg-dakuon: #e3f2fd;    /* 柔和藍 (濁音) */
+    --bg-handakuon: #e8f5e9; /* 柔和綠 (半濁音) */
+    --bg-yoon: #f3e5f5;      /* 柔和紫 (拗音) */
+
+    /* 拗音特殊色 (卡片 Hover 時用) */
+    --dakuon-border: #a0e9f1;   /* 濁拗音卡片邊框色 */
+    
+    /* 玻璃擬態樣式 */
+    --glass-bg: rgba(255, 255, 255, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-shadow: rgba(255, 133, 161, 0.2);
+    
+    /* 字體 */
+    --font-kawaii: 'Fredoka', 'Noto Sans JP', sans-serif;
+    --font-japanese: 'Noto Sans JP', sans-serif;
+    
+    /* 轉場動畫 */
+    --transition-kawaii: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fffafb; /* 極淺粉，取代純白 */
+    font-family: var(--font-japanese);
+    color: var(--text-main);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. 靜態背景容器 (Sakura Background)
+   >>> 已刪除 petal 和 fall 動畫 <<<
+   ========================================= */
+.sakura-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #fff 0%, #ffe3ec 100%);
+    z-index: -2;
+}
+
+/* =========================================
+   3. 遊戲 UI 容器 (Wrapper)
+   ========================================= */
+.game-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.game-title {
+    font-family: var(--font-kawaii);
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8),
+                 0 0 15px rgba(255, 133, 161, 0.4);
+}
+
+.game-title .accent {
+    color: #ff85a1;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8),
+                 0 0 15px rgba(255, 133, 161, 0.6);
+}
+
+/* =========================================
+   4. 通用表格區域設定 (Chart Section)
+   ========================================= */
+.chart-section {
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    border: 3px solid var(--glass-border);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 15px 50px var(--glass-shadow);
+    margin-bottom: 50px; /* 表格之間的間距 */
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+    border-bottom: 3px dashed #ff85a1;
+    padding-bottom: 10px;
+}
+
+.section-header h2 {
+    font-family: var(--font-kawaii);
+    font-size: 1.8rem;
+    color: var(--text-main);
+}
+
+/* =========================================
+   5. 通用 RWD 網格佈局 (Grid)
+   核心: 6列 (行標題文字 + 5假名卡片)
+   拗音區域例外 (4列)
+   ========================================= */
+.kana-grid {
+    display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+/* 針對手机的 Grid RWD */
+@media (max-width: 767px) {
+    .kana-grid {
+        grid-template-columns: repeat(2, 1fr); /* 手机變為2列 */
+    }
+}
+
+/* 通用行標題文字 (あ行, か行...) */
+.gyo-label {
+    font-family: var(--font-japanese);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-sub);
+    text-align: center;
+    align-self: center;
+    padding-right: 15px;
+}
+
+@media (max-width: 767px) {
+    .gyo-label {
+        display: none; /* 手机上隱藏行標題文字以利排版 */
+    }
+}
+
+/* 通用空格子 */
+.empty-cell {
+    grid-column: span 1;
+}
+
+/* 拗音 Grid (4列) */
+.yoon-grid {
+    display: grid;
+    grid-template-columns: 80px repeat(3, 1fr);
+    gap: 15px;
+}
+
+@media (max-width: 767px) {
+    .yoon-grid {
+        grid-template-columns: repeat(2, 1fr); /* 手机變為2列 */
+    }
+}
+
+/* 拗音的行 Label (yoon-gyo 已設定為空白，這裡設定 Grid 對齊) */
+.yoon-gyo {
+    grid-column: span 1;
+}
+
+@media (max-width: 767px) {
+    .yoon-gyo {
+        display: none; /* 手机上隱藏 */
+    }
+}
+
+/* 拗音區的分隔線 */
+.yoon-divider {
+    height: 3px;
+    background-image: linear-gradient(90deg, #ff85a1 50%, transparent 50%);
+    background-size: 15px 3px;
+    margin: 20px 0;
+    grid-column: span 4;
+}
+
+/* =========================================
+   6. 通用假名卡片按鈕 (Kana Card)
+   所有分類共用結構，Hover 放大發光
+   ========================================= */
+.kana-card {
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 25px 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-kawaii);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ✨ Hover 放大 & 金色發光 ✨ */
+.kana-card:hover {
+    transform: scale(1.1) translateY(-10px);
+    background-color: #fff;
+    border-color: var(--dakuon-border);
+    box-shadow: 0 20px 40px var(--accent-glow);
+}
+
+/* =========================================
+   7. 五種分类的卡片背景色設定 (柔和好閱讀)
+   ======================================== */
+
+/* (1) 清音 (粉色) */
+.seion-card { background-color: var(--bg-seion); }
+.seion-card .shine { background: linear-gradient(90deg, transparent, rgba(255, 133, 161, 0.4), transparent); }
+
+/* (2) 鼻音 (金色) */
+.bion-card { background-color: var(--bg-bion); }
+.bion-card .shine { background: linear-gradient(90deg, transparent, rgba(255, 235, 59, 0.4), transparent); }
+
+/* (3) 濁音 (藍色) */
+.dakuon-card { background-color: var(--bg-dakuon); }
+.dakuon-card .shine { background: linear-gradient(90deg, transparent, rgba(160, 233, 241, 0.4), transparent); }
+
+/* (4) 半濁音 (綠色) */
+.handakuon-card { background-color: var(--bg-handakuon); }
+.handakuon-card .shine { background: linear-gradient(90deg, transparent, rgba(200, 230, 201, 0.4), transparent); }
+
+/* (5) 拗音 (紫色) */
+.yoon-card { background-color: var(--bg-yoon); }
+.yoon-card .shine { background: linear-gradient(90deg, transparent, rgba(225, 190, 231, 0.4), transparent); }
+
+/* 拗音：濁拗音/半濁拗音 卡片邊框特別色 */
+.yoon-dakuon-card { border-color: var(--dakuon-border); background-color: rgba(160, 233, 241, 0.1); }
+.yoon-handakuon-card { border-color: var(--accent-gold); background-color: rgba(255, 184, 77, 0.1); }
+
+
+/* =========================================
+   8. 卡片文字樣式設定 (Seion/濁/半濁 用)
+   ========================================= */
+.kana-main {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.hira {
+    font-family: var(--font-japanese);
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--text-main);
+    transition: var(--transition-kawaii);
+}
+
+.kata {
+    font-family: var(--font-japanese);
+    font-size: 1.8rem;
+    color: var(--text-sub);
+    transition: var(--transition-kawaii);
+}
+
+/* Hover 時文字顏色加深 (清音粉) */
+.kana-card:hover .hira { color: #ff85a1; }
+.kana-card:hover .kata { color: var(--text-main); }
+
+/* =========================================
+   9. 拗音卡片文字樣式设定 (Yoon Card)
+   Yoon 文字較長，需要調整大小
+   ========================================= */
+.yoon-card {
+    min-height: 150px;
+}
+
+.yoon-main {
+    font-size: 2rem; /* 拗音文字稍微縮小以利排版 */
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* Hover 時拗音文字顏色變更 */
+.yoon-card:hover .yoon-main { color: #ff85a1; }
+
+/* 羅馬字 (Romaji) */
+.romaji {
+    font-family: var(--font-kawaii);
+    font-size: 2rem;
+    /* 所有的 romaji 文字均已小寫，這裡只設定顏色 */
+    color: #ffb84d; /* 金色 */
+    text-transform: none; /* 取消大寫轉化 */
+    background: rgba(255, 255, 255, 0.6);
+    padding: 4px 14px;
+    border-radius: 10px;
+    margin-top: auto;
+}
+
+/* 裝飾性光線 (反光條) */
+.shine {
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%;
+    height: 100%;
+    /* shine 的漸層顏色在 Section 部分定義 */
+    transition: 0.6s;
+}
+
+.kana-card:hover .shine {
+    left: 150%;
+}
+
+/* =========================================
+   10. RWD 媒體查詢 (Media Queries)
+   ========================================= */
+
+/* ✅ 針對平板 & 小螢幕 */
+@media (max-width: 1024px) {
+    .game-title { font-size: 3rem; letter-spacing: 3px; }
+    .seion-grid { grid-template-columns: 60px repeat(5, 1fr); gap: 10px; }
+    .gyo-label { font-size: 2.2rem; }
+    .hira { font-size: 2.8rem; }
+    .kata { font-size: 1.4rem; }
+    .kana-card { min-height: 150px; padding: 15px 10px; }
+}
+
+/* ✅ 針對手机 切換 */
+@media (max-width: 767px) {
+    .game-wrapper { padding: 30px 10px; }
+    .main-header { margin-bottom: 40px; }
+    .game-title { font-size: 2.2rem; }
+    .chart-section { padding: 20px; border-radius: 20px; }
+    
+    /* 卡片調整適配手机 */
+    .kana-card {
+        min-height: 120px;
+        padding: 15px;
+        grid-column: span 1; 
+    }
+    
+    .kana-main { gap: 5px; flex-direction: column; align-items: center; }
+    .hira { font-size: 2.2rem; }
+    .kata { font-size: 1.2rem; }
+    .yoon-main { font-size: 1.4rem; text-align: center; }
+    .romaji { font-size: 0.9rem; }
+    
+    /* Hover 效果在手机上減弱，避免誤觸 */
+    .kana-card:hover {
+        transform: scale(1.05) translateY(-5px);
+    }
+}
